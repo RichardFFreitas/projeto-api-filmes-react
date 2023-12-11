@@ -1,0 +1,41 @@
+* {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000d5;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #F7D354;
+    transition: .5s;
+}
+
+a:hover {
+    color: #b8930c;
+}
+
+.loading-icon {
+    animation: spin 1s infinite linear;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh; 
+  }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
