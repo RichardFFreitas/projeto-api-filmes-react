@@ -1,8 +1,34 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Logo](https://upload.wikimedia.org/wikipedia/commons/8/89/Tmdb.new.logo.svg)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Films With React (TMDB API Consumer Project)
+
+A Project to study API and the roots for future projects. 
+This project is designed to consume the API provided by The Movie Database (TMDB). It fetches and processes data about movies, TV shows, and other related information.
+
+
+## API Documentation 
+
+#### Return all itens 
+
+```http
+  GET /api/items
+```
+
+| Parameter   | Type       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `api_key` | `string` | **Mandatory**. The key of your API|
+
+#### Return Itens
+
+```http
+  GET /api/items/${id}
+```
+
+| Parameter   | Type       | Description                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `id`      | `string` | **Mandatory**. The ID of the item you want |
+
+
+
